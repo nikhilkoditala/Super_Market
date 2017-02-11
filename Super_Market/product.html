@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Milk</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .image-container{text-align:center}
+    /*********************************************
+          Call Bootstrap
+*********************************************/
+
+@import url("bootstrap/bootstrap.min.css");
+@import url("bootstrap-override.css");
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+/*********************************************
+            Theme Elements
+*********************************************/
+
+.gold{
+  color: #FFBF00;
+}
+
+/*********************************************
+          PRODUCTS
+*********************************************/
+
+.product{
+  border: 1px solid #dddddd;
+  height: 321px;
+}
+
+.product>img{
+  max-width: 230px;
+}
+
+.product-rating{
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.product-title{
+  font-size: 20px;
+}
+
+.product-desc{
+  font-size: 14px;
+}
+
+.product-price{
+  font-size: 22px;
+}
+
+.product-stock{
+  color: #74DF00;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.product-info{
+    margin-top: 50px;
+}
+
+/*********************************************
+          VIEW
+*********************************************/
+
+.content-wrapper {
+  max-width: 1140px;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.container-fluid{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.view-wrapper {
+  float: right;
+  max-width: 70%;
+  margin-top: 25px;
+}
+
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 100%;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="supermarket.html">Super Market</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="supermarket.html">Home</a></li>
+        <li class="active"><a href="milk.html">Milk</a></li>
+        <li><a href="paper.html">News Paper</a></li>
+        <li><a href="water.html">Mineral Watercans</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="content-wrapper"> 
+    <div class="item-container">  
+      <div class="container"> 
+        
+
+        <div >
+
+              <div class="thumbnail" style="border:none; background:white;">
+
+              <div class="col-sm-6 col-md-6 col-xs-12 image-container">
+                <img src="heritage.jpg" style="height:350px; margin-right:60px; margin-left:-15px;" />
+              </div>
+
+              <div class="col-md-6 ">  
+                <div class="product-title"><h3>Heritage</h3></div>
+                <div class="product-desc">This is most ordered product from our market</div>
+                
+                <hr>
+                <div class="product-price"><span style='font-family:Arial;'>&#8377;</span> 25/-</div>
+                <div class="product-stock">In Stock</div>
+                <hr>
+                <div class="btn-group cart">
+                  <button type="button" class="btn btn-success">
+                    Add to cart 
+                  </button>
+                </div>
+                
+
+                
+              </div>
+              </div>        
+        
+      </div> 
+
+    </div>
+    
+</div>
+<div class="container">
+   <p><h3>Product details:</h3></p>
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+
+<!-- Footer -->
+<div class="container text-center" id="Footer">
+    <hr />
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-6">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Address:</a></li>
+          <li><a>Plot no.123 <br> Bhagyanagar colony,<br> Kukatpally,<br> Hyderabad, 500085</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="/">© 2013 Super Market</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+
+
+
+</html>
