@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Milk</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+.col-item
+{
+    border: 1px solid #E1E1E1;
+    border-radius: 10px;
+    background: #FFF;
+}
+.col-item:hover
+{ 
+  box-shadow: 0px 2px 5px -1px #000;
+  -moz-box-shadow: 0px 2px 5px -1px #000;
+  -webkit-box-shadow: 0px 2px 5px -1px #000;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 10px;   
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;   
+  border-bottom:2px solid #52A1D5;        
+}
+.col-item .photo img
+{
+    margin: 0 auto;
+    width: 100%;
+    padding: 1px;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.col-item .info
+{
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 1px;
+}
+
+.col-item .price
+{
+    /*width: 50%;*/
+    float: left;
+    margin-top: 5px;
+}
+
+.col-item .price h5
+{
+    line-height: 20px;
+    margin: 0;
+}
+
+.price-text-color
+{
+    color: #219FD1;
+}
+
+.col-item .info .rating
+{
+    color: #777;
+}
+
+.col-item .rating
+{
+    /*width: 50%;*/
+    float: left;
+    font-size: 17px;
+    text-align: right;
+    line-height: 52px;
+    margin-bottom: 10px;
+    height: 52px;
+}
+
+.col-item .separator
+{
+    border-top: 1px solid #E1E1E1;
+}
+
+.clear-left
+{
+    clear: left;
+}
+
+.col-item .separator p
+{
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.col-item .separator p i
+{
+    margin-right: 5px;
+}
+.col-item .btn-add
+{
+    width: 50%;
+    float: left;
+}
+
+.col-item .btn-add
+{
+    border-right: 1px solid #E1E1E1;
+    
+}
+
+.col-item .btn-details
+{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+.controls
+{
+    margin-top: 20px;
+}
+[data-slide="prev"]
+{
+    margin-right: 10px;
+}
+
+/*
+Hover the image
+*/
+.post-img-content
+{
+    height: 196px;
+    position: relative;
+}
+.post-img-content img
+{
+    position: absolute;
+    padding: 1px;
+    border-radius: 10px 10px 0 0 ;
+}
+.post-title{
+    display: table-cell;
+    vertical-align: bottom;
+    z-index: 2;
+    position: relative;
+}
+.post-title b{
+    background-color: rgba(51, 51, 51, 0.58);
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    color: #FFF;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.post-title b:first-child{
+    font-size: 14px;
+}
+.round-tag{
+    width: 60px;
+    height: 60px;
+    border-radius: 50% 50% 50% 0;
+    border: 4px solid #FFF;
+    background: #37A12B;
+    position: absolute;
+    bottom: 0px;
+    padding: 15px 6px;
+    font-size: 17px;
+    color: #FFF;
+    font-weight: bold;
+}
+  </style>
+
+
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="supermarket.html">Super Market</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="supermarket.html">Home</a></li>
+        <li class="active"><a href="milk.html">Milk</a></li>
+        <li><a href="paper.html">News Paper</a></li>
+        <li><a href="water.html">Mineral Watercans</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div class="container" style="margin-top:50px;">
+  <div class="row">
+
+      <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-item">
+                <div class="post-img-content">
+                    <a href="">
+                    <img src="heritage.jpg" class="img-responsive" />
+                    <span class="post-title">
+                        <b>Most Ordered</b>
+                    </span>
+                    </a>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="price col-md-6">
+                            <h5> Heritage</h5>
+                            <h5 class="price-text-color">Rs.25/-</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="separator clear-left">
+                        <p class="btn-add">
+                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
+                        <p class="btn-details">
+                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a></p>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-item">
+                <div class="post-img-content">
+                    <a href="">
+                    <img src="heritageCream.jpg" class="img-responsive" />
+                    <span class="post-title">
+                        <b>Cream</b>
+                    </span>
+                    </a>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="price col-md-6">
+                            <h5> Heritage Cream</h5>
+                            <h5 class="price-text-color">Rs.30/-</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="separator clear-left">
+                        <p class="btn-add">
+                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
+                        <p class="btn-details">
+                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a></p>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-item">
+                <div class="post-img-content">
+                    <a href="">
+                    <img src="heritageSlim.jpg" class="img-responsive" />
+                    
+                    </a>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="price col-md-6">
+                            <h5> Heritage Slim</h5>
+                            <h5 class="price-text-color">Rs.25/-</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="separator clear-left">
+                        <p class="btn-add">
+                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
+                        <p class="btn-details">
+                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a></p>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-item">
+                <div class="post-img-content">
+                    <a href="">
+                    <img src="motherDairy.jpg" class="img-responsive" />
+                    </a>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="price col-md-6">
+                            <h5>MotherDairy</h5>
+                            <h5 class="price-text-color">Rs.25/-</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="separator clear-left">
+                        <p class="btn-add">
+                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
+                        <p class="btn-details">
+                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a></p>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" style="margin-top:50px;">
+  <div class="row">
+
+      <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-item">
+                <div class="post-img-content">
+                    <a href="">
+                    <img src="amul.jpg" class="img-responsive" />
+                    </a>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="price col-md-6">
+                            <h5> Amul</h5>
+                            <h5 class="price-text-color">Rs.25/-</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="separator clear-left">
+                        <p class="btn-add">
+                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
+                        <p class="btn-details">
+                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a></p>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-item">
+                <div class="post-img-content">
+                    <a href="">
+                    <img src="amulGold.jpg" class="img-responsive" />
+                    </a>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="price col-md-6">
+                            <h5> Amul Gold</h5>
+                            <h5 class="price-text-color">Rs.20/-</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="separator clear-left">
+                        <p class="btn-add">
+                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
+                        <p class="btn-details">
+                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a></p>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-item">
+                <div class="post-img-content">
+                    <a href="">
+                    <img src="visakha.jpg" class="img-responsive" />
+                    </a>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="price col-md-6">
+                            <h5> Visakha</h5>
+                            <h5 class="price-text-color">Rs.27/-</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="separator clear-left">
+                        <p class="btn-add">
+                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
+                        <p class="btn-details">
+                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a></p>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-item">
+                <div class="post-img-content">
+                    <a href="">
+                    <img src="vijaya.jpg" class="img-responsive" />
+                    </a>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="price col-md-6">
+                            <h5> Vijaya</h5>
+                            <h5 class="price-text-color">Rs.25/-</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="separator clear-left">
+                        <p class="btn-add">
+                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a></p>
+                        <p class="btn-details">
+                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a></p>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<div class="container text-center" id="Footer">
+    <hr />
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-6">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Address:</a></li>
+          <li><a>Plot no.123 <br> Bhagyanagar colony,<br> Kukatpally,<br> Hyderabad, 500085</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="/">© 2013 Super Market</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+  // page is now ready, initialize the calendar...
+  // options and github  - http://fullcalendar.io/
+
+$('#calendar').fullCalendar({
+    dayClick: function() {
+        
+    }
+});
+
+});
+
+  </script>
+  <style type="text/css">
+    #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+  </style>
+  
+
+<script src='http://fullcalendar.io/js/fullcalendar-2.2.3/lib/moment.min.js'></script>
+<script src='http://fullcalendar.io/js/fullcalendar-2.2.3/fullcalendar.min.js'></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="supermarket.html">Super Market</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="supermarket.html">Home</a></li>
+        <li><a href="milk.html">Milk</a></li>
+        <li><a href="paper.html">News Paper</a></li>
+        <li><a href="water.html">Mineral Watercans</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- put this within head tag, this location creates a validation error -->
+
+<link rel='stylesheet' href='http://fullcalendar.io/js/fullcalendar-2.2.3/fullcalendar.css' />
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-md-12">
+    <img src="http://i.imgur.com/7nylkQZ.png" alt="">
+    
+    <hr>
+
+    <div id='calendar'></div>
+
+
+  </div>
+  </div>
+
+</div>
+
+
+
+
+<!-- Footer -->
+<div class="container text-center" id="Footer">
+    <hr />
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-6">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Address:</a></li>
+          <li><a>Plot no.123 <br> Bhagyanagar colony,<br> Kukatpally,<br> Hyderabad, 500085</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="/">© 2013 Super Market</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
